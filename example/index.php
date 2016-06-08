@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . "/../src/MergadoAppHookClient.php";
+require __DIR__ . "/../lib/MergadoAppHookClient.php";
 
 \MergadoApp\Hook\Client::$debug = true;
 $c = new \MergadoApp\Hook\Client;
