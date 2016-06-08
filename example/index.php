@@ -2,20 +2,22 @@
 
 require __DIR__ . "/../lib/MergadoAppHookClient.php";
 
-\MergadoApp\Hook\Client::$debug = true;
+// Uncomment this to enable debug mode - errors will be shown.
+// \MergadoApp\Hook\Client::$debug = true;
+
 $c = new \MergadoApp\Hook\Client;
 
-$c->addHandler('enable', function($d) {
+$c->addHandler('enable', function($hookData) {
 
-	// "App is being enabled" logic
-	echo "enable";
+	// "App is being enabled" logic.
+	printf("App enabled for %s with ID %s.", $hookData['entity_type'], $hookData['entity_id']);
 
 });
 
-$c->addHandler('disable', function($d) {
+$c->addHandler('disable', function($hookData) {
 
-	// "App is being enabled" logic
-	echo "disable";
+	// "App is being disabled" logic.
+	printf("App disabled for %s with ID %s.", $hookData['entity_type'], $hookData['entity_id']);
 
 });
 
