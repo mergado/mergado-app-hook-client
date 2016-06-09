@@ -7,14 +7,14 @@ require __DIR__ . "/../lib/MergadoAppHookClient.php";
 
 $c = new \MergadoApp\Hook\Client;
 
-$c->addHandler('enable', function($hookData) {
+$c->addHandler('app.enable', function($hookData) {
 
 	// "App is being enabled" logic.
 	printf("App enabled for %s with ID %s.", $hookData['entity_type'], $hookData['entity_id']);
 
 });
 
-$c->addHandler('disable', function($hookData) {
+$c->addHandler('app.disable', function($hookData) {
 
 	// "App is being disabled" logic.
 	printf("App disabled for %s with ID %s.", $hookData['entity_type'], $hookData['entity_id']);
