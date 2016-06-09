@@ -1,6 +1,6 @@
 # Mergado App Hook Client
 
-A standard implementation of hook client for a Mergado App. You can of course implement your own app's hooks handler, but this is to provide you a default and standard *Mergado* way and to show you how it can be done.
+A standard implementation of hook client for a Mergado App. You can of course implement your own app's hook handler, but this is to provide you a default and standard *Mergado* way and to show you how it can be done.
 
 **For more information about hooks**, see http://mergado.github.io/docs/apps/app-hooks.html.
 
