@@ -2,6 +2,8 @@
 
 A standard implementation of hook client for a Mergado App. You can of course implement your own app's hooks handler, but this is to provide you a default and standard *Mergado* way and to show you how it can be done.
 
+**For more information about hooks**, see http://mergado.github.io/docs/apps/app-hooks.html.
+
 ### Installation
 1. Download the file `MergadoAppHookClient.php` located at https://github.com/mergado/mergado-app-hook-client/blob/master/lib/MergadoAppHookClient.php
 2. Put it somewhere into your app's directory, so you can include the file from the `index.php` file located in your app's system hook directory (which is then invoked by Mergado placing requests to your app's hook endpoint: `https://appcloud.mergado.com/apps/myapp/_mergado/hook/`) 
@@ -25,7 +27,8 @@ A standard implementation of hook client for a Mergado App. You can of course im
  ```
 5. ***Profit!***
 
-Full example:
+### Full example:
+
 ```php
 <?php
 
